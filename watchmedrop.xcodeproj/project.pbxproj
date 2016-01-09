@@ -18,6 +18,7 @@
 		65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155031C4185B200BC4BD4 /* Measurement.swift */; };
 		65C155061C41869800BC4BD4 /* MeasurementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155051C41869800BC4BD4 /* MeasurementModel.swift */; };
 		65C155081C418F1400BC4BD4 /* pw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155071C418F1400BC4BD4 /* pw.swift */; };
+		65C1550B1C41907600BC4BD4 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1550A1C41907600BC4BD4 /* RNCryptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		65C155031C4185B200BC4BD4 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		65C155051C41869800BC4BD4 /* MeasurementModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementModel.swift; sourceTree = "<group>"; };
 		65C155071C418F1400BC4BD4 /* pw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pw.swift; sourceTree = SOURCE_ROOT; };
+		65C1550A1C41907600BC4BD4 /* RNCryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
+		65C1550C1C4190CE00BC4BD4 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		65C154CE1C4180BC00BC4BD4 /* watchmedrop */ = {
 			isa = PBXGroup;
 			children = (
+				65C155091C41905D00BC4BD4 /* Third Party */,
 				65C155021C41839200BC4BD4 /* View */,
 				65C155011C41838700BC4BD4 /* Model */,
 				65C155001C41837700BC4BD4 /* Controller */,
@@ -159,6 +163,15 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		65C155091C41905D00BC4BD4 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				65C1550C1C4190CE00BC4BD4 /* RNCryptor.h */,
+				65C1550A1C41907600BC4BD4 /* RNCryptor.swift */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 				65C155081C418F1400BC4BD4 /* pw.swift in Sources */,
 				65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */,
 				65C154D81C4180BC00BC4BD4 /* watchmedrop.xcdatamodeld in Sources */,
+				65C1550B1C41907600BC4BD4 /* RNCryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +406,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/daniel/Documents/Developer/iOS/watchmedrop/watchmedrop/RNCryptor.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,6 +445,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/daniel/Documents/Developer/iOS/watchmedrop/watchmedrop/RNCryptor.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
