@@ -15,6 +15,7 @@
 		65C154DD1C4180BC00BC4BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C154DB1C4180BC00BC4BD4 /* LaunchScreen.storyboard */; };
 		65C154E81C4180BC00BC4BD4 /* watchmedropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154E71C4180BC00BC4BD4 /* watchmedropTests.swift */; };
 		65C154F31C4180BC00BC4BD4 /* watchmedropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154F21C4180BC00BC4BD4 /* watchmedropUITests.swift */; };
+		65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155031C4185B200BC4BD4 /* Measurement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		65C154EE1C4180BC00BC4BD4 /* watchmedropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchmedropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C154F21C4180BC00BC4BD4 /* watchmedropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchmedropUITests.swift; sourceTree = "<group>"; };
 		65C154F41C4180BC00BC4BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C155031C4185B200BC4BD4 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,10 @@
 		65C154CE1C4180BC00BC4BD4 /* watchmedrop */ = {
 			isa = PBXGroup;
 			children = (
+				65C155021C41839200BC4BD4 /* View */,
+				65C155011C41838700BC4BD4 /* Model */,
+				65C155001C41837700BC4BD4 /* Controller */,
 				65C154CF1C4180BC00BC4BD4 /* AppDelegate.swift */,
-				65C154D11C4180BC00BC4BD4 /* ViewController.swift */,
 				65C154D31C4180BC00BC4BD4 /* Main.storyboard */,
 				65C154D91C4180BC00BC4BD4 /* Assets.xcassets */,
 				65C154DB1C4180BC00BC4BD4 /* LaunchScreen.storyboard */,
@@ -126,6 +130,29 @@
 				65C154F41C4180BC00BC4BD4 /* Info.plist */,
 			);
 			path = watchmedropUITests;
+			sourceTree = "<group>";
+		};
+		65C155001C41837700BC4BD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65C154D11C4180BC00BC4BD4 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65C155011C41838700BC4BD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65C155031C4185B200BC4BD4 /* Measurement.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65C155021C41839200BC4BD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				65C154D21C4180BC00BC4BD4 /* ViewController.swift in Sources */,
 				65C154D01C4180BC00BC4BD4 /* AppDelegate.swift in Sources */,
+				65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */,
 				65C154D81C4180BC00BC4BD4 /* watchmedrop.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
