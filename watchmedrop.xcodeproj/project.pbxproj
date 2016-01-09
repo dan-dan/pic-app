@@ -16,6 +16,8 @@
 		65C154E81C4180BC00BC4BD4 /* watchmedropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154E71C4180BC00BC4BD4 /* watchmedropTests.swift */; };
 		65C154F31C4180BC00BC4BD4 /* watchmedropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154F21C4180BC00BC4BD4 /* watchmedropUITests.swift */; };
 		65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155031C4185B200BC4BD4 /* Measurement.swift */; };
+		65C155061C41869800BC4BD4 /* MeasurementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155051C41869800BC4BD4 /* MeasurementModel.swift */; };
+		65C155081C418F1400BC4BD4 /* pw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C155071C418F1400BC4BD4 /* pw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		65C154F21C4180BC00BC4BD4 /* watchmedropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchmedropUITests.swift; sourceTree = "<group>"; };
 		65C154F41C4180BC00BC4BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C155031C4185B200BC4BD4 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		65C155051C41869800BC4BD4 /* MeasurementModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementModel.swift; sourceTree = "<group>"; };
+		65C155071C418F1400BC4BD4 /* pw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pw.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				65C154E71C4180BC00BC4BD4 /* watchmedropTests.swift */,
+				65C155051C41869800BC4BD4 /* MeasurementModel.swift */,
+				65C155071C418F1400BC4BD4 /* pw.swift */,
 				65C154E91C4180BC00BC4BD4 /* Info.plist */,
 			);
 			path = watchmedropTests;
@@ -288,6 +294,7 @@
 			files = (
 				65C154D21C4180BC00BC4BD4 /* ViewController.swift in Sources */,
 				65C154D01C4180BC00BC4BD4 /* AppDelegate.swift in Sources */,
+				65C155081C418F1400BC4BD4 /* pw.swift in Sources */,
 				65C155041C4185B200BC4BD4 /* Measurement.swift in Sources */,
 				65C154D81C4180BC00BC4BD4 /* watchmedrop.xcdatamodeld in Sources */,
 			);
@@ -297,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C155061C41869800BC4BD4 /* MeasurementModel.swift in Sources */,
 				65C154E81C4180BC00BC4BD4 /* watchmedropTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
