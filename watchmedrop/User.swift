@@ -1,5 +1,5 @@
 //
-//  Measurement.swift
+//  User.swift
 //  watchmedrop
 //
 //  Created by Daniel Cortez on 1/9/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Measurement: NSManagedObject {
+class User: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 
