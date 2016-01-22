@@ -60,23 +60,40 @@ class MeasurementModelTests: XCTestCase {
         }
         
     }
+    
+    func testUserContainsMeasurement() {
+        let measurement = manager.addMeasurement(145, bf: 0.20, user: testUser)
+        let testValue = testUser.measurements?.firstObject as? Measurement
+        
+        XCTAssertNotNil(testValue, "Measurement should not be nil")
+        XCTAssertEqual(testValue, measurement, "Measurement and test value are not equal")
+    }
 
     func testWeightCorrect() {
+
+        let testWeight = 145.8
         
-        
+        let _ = manager.addMeasurement(testWeight, bf: 0.28, user: testUser)
+        let retrievedMeasurement = testUser.measurements?.firstObject as? Measurement
+        XCTAssertEqual(retrievedMeasurement?.weight, NSNumber(double:testWeight), "Weights not equal")
+
     }
     
     func testBFCorrect() {
         
+        let testBF = 0.28
         
+        let _ = manager.addMeasurement(145, bf: testBF, user: testUser)
+        let retrievedMeasurement = testUser.measurements?.firstObject as? Measurement
+        XCTAssertEqual(retrievedMeasurement?.bf, NSNumber(double:testBF), "BF not equal")
     }
     
-    func testUserCorrect() {
-        
-    }
     
     func testDateNotNil() {
         
+        let _ = manager.addMeasurement(145, bf: 0.20, user: testUser)
+        let measurement = testUser.measurements?.firstObject as? Measurement
+        XCTAssertNotNil(measurement?.date, "Measurement date should not be nil")
     }
     
     func testRandomMeasurmentCount() {

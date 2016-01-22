@@ -18,11 +18,11 @@ public class MeasurementManager {
         self.coreDataStack = coreDataStack
     }
     
-    func addMeasurement(weight: Float, bf: Float, user: User) -> Measurement? {
+    func addMeasurement(weight: Double, bf: Double, user: User) -> Measurement? {
         let measurement = NSEntityDescription.insertNewObjectForEntityForName("Measurement", inManagedObjectContext: managedObjectContext) as! Measurement
 
-        measurement.weight = weight
-        measurement.bf = bf
+        measurement.weight = NSNumber(double: weight)
+        measurement.bf = NSNumber(double: bf)
         measurement.user = user
         measurement.date = NSDate()
         
