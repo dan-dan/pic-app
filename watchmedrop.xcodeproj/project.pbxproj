@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6537B6D11C51E75B009BBA63 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537B6D01C51E75B009BBA63 /* UserTests.swift */; };
 		65C154D01C4180BC00BC4BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154CF1C4180BC00BC4BD4 /* AppDelegate.swift */; };
 		65C154D21C4180BC00BC4BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C154D11C4180BC00BC4BD4 /* ViewController.swift */; };
 		65C154D51C4180BC00BC4BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C154D31C4180BC00BC4BD4 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6537B6D01C51E75B009BBA63 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		65C154CC1C4180BC00BC4BD4 /* watchmedrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchmedrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C154CF1C4180BC00BC4BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65C154D11C4180BC00BC4BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				65C154E71C4180BC00BC4BD4 /* watchmedropTests.swift */,
 				65C155051C41869800BC4BD4 /* MeasurementModelTests.swift */,
+				6537B6D01C51E75B009BBA63 /* UserTests.swift */,
 				65C154E91C4180BC00BC4BD4 /* Info.plist */,
 				65C1551A1C41D28000BC4BD4 /* Test Support */,
 			);
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6537B6D11C51E75B009BBA63 /* UserTests.swift in Sources */,
 				65C155061C41869800BC4BD4 /* MeasurementModelTests.swift in Sources */,
 				65C154E81C4180BC00BC4BD4 /* watchmedropTests.swift in Sources */,
 				65C155191C41D27C00BC4BD4 /* TestCoreDataStack.swift in Sources */,
@@ -580,6 +584,7 @@
 				65C154F91C4180BC00BC4BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65C154FA1C4180BC00BC4BD4 /* Build configuration list for PBXNativeTarget "watchmedropTests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +593,7 @@
 				65C154FC1C4180BC00BC4BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65C154FD1C4180BC00BC4BD4 /* Build configuration list for PBXNativeTarget "watchmedropUITests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +602,7 @@
 				65C154FF1C4180BC00BC4BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

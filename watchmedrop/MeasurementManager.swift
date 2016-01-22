@@ -24,6 +24,7 @@ public class MeasurementManager {
         measurement.weight = weight
         measurement.bf = bf
         measurement.user = user
+        measurement.date = NSDate()
         
         coreDataStack.saveContext()
         

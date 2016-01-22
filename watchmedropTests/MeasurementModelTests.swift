@@ -36,6 +36,54 @@ class MeasurementModelTests: XCTestCase {
         testUser = nil
     }
     
+    
+    func testAddMeasurement() {
+        
+        let measurement = manager.addMeasurement(145, bf: 0.20, user: testUser)
+        XCTAssertNotNil(measurement, "User should not be nil")
 
+    }
+    
+    
+    func testRootContextIsSaved() {
+        
+        expectationForNotification(NSManagedObjectContextDidSaveNotification, object: coreDataStack.context) { notification in
+            return true
+            
+        }
+        
+        let _ = manager.addMeasurement(145, bf: 0.20, user: testUser)
+
+        waitForExpectationsWithTimeout(2.0) { error in
+            XCTAssertNil( error, "Save did not occur")
+            
+        }
+        
+    }
+
+    func testWeightCorrect() {
+        
+        
+    }
+    
+    func testBFCorrect() {
+        
+        
+    }
+    
+    func testUserCorrect() {
+        
+    }
+    
+    func testDateNotNil() {
+        
+    }
+    
+    func testRandomMeasurmentCount() {
+        
+        
+    
+    }
+    
 
 }
