@@ -97,8 +97,20 @@ class MeasurementModelTests: XCTestCase {
     }
     
     func testRandomMeasurmentCount() {
+       
+        let randomValue = Int(arc4random_uniform(UInt32(300))) // 300 max
+        var i: Int
+
+        for i = 0; i < randomValue; ++i {
+        
+            let testWeight =  Double(arc4random()) / 0xFFFFFFFF
+            let testBF =  Double(arc4random()) / 0xFFFFFFFF
+            let _ = manager.addMeasurement(testWeight, bf: testBF, user: testUser)
+
+        }
         
         
+        XCTAssertEqual(randomValue, testUser.measurements?.count, "Measurements are not equal")
     
     }
     
